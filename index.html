@@ -3690,7 +3690,20 @@
 
 <div class="pic"><img src="/img/worldradmir1-min.jpg" alt="worldradmir1-min.jpg"></div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+</script>
+
 <body style="background-image:url('image/worldradmir1-min.jpg')">
+
+<script type="text/javascript">
+var bg_Offset = 0;
+function scroll_bg(){
+    bg_Offset++;
+    if (bg_Offset > 150) bg_Offset = 0;
+    $("body").css("backgroundPosition", "0 " + bg_Offset + "px");
+}
+$(document).ready(function(){ setInterval("scroll_bg()", 50); });
+</script>
 
 <script type="text/javascript" src="/scripts/jquery.hcsticky-min.js"></script>
 <script type="text/javascript">
